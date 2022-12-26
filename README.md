@@ -1,3 +1,3 @@
-# test-task-onix
+# TestTaskPtashets
 
 https://stepashka81.github.io/TestTaskPtashets/

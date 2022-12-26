@@ -8,7 +8,6 @@
 
 body {
 	max-width: 1920px;
-	/* height: 1000px; */
 	background-color: black;
 	margin: 0 auto;
 
@@ -24,14 +23,11 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 }
-
-
 .companyLogo {
 	position: relative;
 	height: 56px;
 	width: 196px;
 }
-
 
 .text {
 	position: absolute;
@@ -46,7 +42,6 @@ footer {
 
 
 }
-
 
 .shape3 {
 
@@ -78,7 +73,6 @@ footer {
 	width: 45.12px;
 	height: 41.34px;
 
-	/* Animation */
 	z-index: 5;
 
 
@@ -98,7 +92,6 @@ footer {
 	transform: scale(1.4);
 	background-image: url(./img/Shape-3-1.png);
 }
-
 
 .navMenu {
 	display: flex;
@@ -145,8 +138,6 @@ div.navMenu select {
 
 }
 
-
-
 .authMenu>button {
 	border: 0;
 	line-height: 30px;
@@ -173,7 +164,6 @@ div.navMenu select {
 	margin-top: 166px;
 	margin-bottom: 140px;
 }
-
 .BigLogo .shape6 {
 
 	width: 28px;
@@ -183,12 +173,10 @@ div.navMenu select {
 	background-image: url(./img/Shape-6.png);
 	z-index: 6;
 }
-
 .BigLogo .shape6:hover {
 	transform: scale(1.3);
 	background-image: url(./img/Shape-6-1.png);
 }
-
 .BigLogo .shape8 {
 	width: 76.42px;
 	height: 70.03px;
@@ -196,12 +184,10 @@ div.navMenu select {
 	background-image: url(./img/Shape-8.png);
 	z-index: 5;
 }
-
 .BigLogo>div .shape8:hover {
 	transform: scale(1.3);
 	background-image: url(./img/Shape-8-1.png);
 }
-
 .BigLogo .shape7 {
 	position: absolute;
 	top: 45%;
@@ -209,8 +195,6 @@ div.navMenu select {
 	background-image: url(./img/Shape-7.png);
 	width: 27.82px;
 	height: 31.85px;
-
-	/* Animation */
 	z-index: 6;
 
 }
@@ -231,8 +215,6 @@ div.navMenu select {
 	color: white;
 }
 
-
-
 .BigLogo {
 	display: flex;
 	justify-content: center;
@@ -246,8 +228,6 @@ h5 {
 	line-height: 38px;
 	color: #306Ef7;
 }
-
-
 h1 {
 	font-family: Poppins;
 	font-size: 75px;
@@ -291,7 +271,6 @@ main>p {
 	margin-bottom: 2em;
 }
 
-
 hr {
 	border: 1px solid;
 	width: 1252px;
@@ -326,50 +305,3 @@ footer div {
 	color: white;
 
 }
-
-
-
-
-
-/*
-.audience {
-	text-align: center;
-	font-family: Poppins;
-	font-weight: 700;
-	font-size: 7rem;
-	line-height: 10.5rem;
-}
-
-
-.textshape {
-	font-family: Poppins;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 136.32px;
-	font-size: 7rem;
-	background-image: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-
-
-
-}
-
-.textshape:hover {
-	-webkit-text-stroke: 3px #3c82f4;
-}
-
-.TurnPanel {
-	font-family: Poppins;
-	text-align: center;
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 60px;
-	color: #ffffff;
-}
-
-
-footer {
-	margin-top: 1338px;
-}*/
