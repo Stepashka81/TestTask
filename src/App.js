@@ -1,6 +1,9 @@
 import './App.css';
+import React from 'react';
 
-function App() {
+class App extends React.Component
+{
+  render(){
   return (
 
     <div>
@@ -22,7 +25,7 @@ function App() {
             </select>
 
 
-            <a href="">About</a>
+            <a href=" ">About</a>
             <a href="">Prising</a>
             <a href="">Blog</a>
 
@@ -132,7 +135,7 @@ function App() {
     </div>
      );
     }
-    
+  }
     export default App;
    
     
