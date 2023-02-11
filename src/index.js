@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Main from './Main/Main';
 import reportWebVitals from './reportWebVitals';
+import Header from './Header/header';
+import BigLogo from './Biglogo/Biglogo';
+import Mission from './Mission/Mission';
+import Footer from './Footer/Footer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <Header/>
+   <BigLogo/>
+   <Mission/>
+   <Main/>
+   <Footer/>
+    
   </React.StrictMode>
 );
 
