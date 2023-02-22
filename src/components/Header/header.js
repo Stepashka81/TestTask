@@ -1,13 +1,12 @@
 
-import '../App.css';
+import './../../App.css';
 import React from 'react';
 
-class Header extends React.Component
-{
-  render(){
-  return (
-<header>
-          <div className="NavBar">
+class Header extends React.Component {
+  render() {
+    return (
+      <header>
+        <div className="NavBar">
           <div className="companyLogo">
             <div className="shape3">
             </div>
@@ -21,7 +20,6 @@ class Header extends React.Component
             <select name="pets" id="pet-select">
               <option value="">Use cases</option>
             </select>
-
 
             <a href=" ">About</a>
             <a href="">Prising</a>
@@ -37,7 +35,7 @@ class Header extends React.Component
 
         </div>
       </header>
-      )
+    )
   }
-  };
-  export default Header;
+};
+export default Header;

@@ -3,21 +3,28 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Main from './Main/Main';
 import reportWebVitals from './reportWebVitals';
-import Header from './Header/header';
-import BigLogo from './Biglogo/Biglogo';
-import Mission from './Mission/Mission';
-import Footer from './Footer/Footer';
-
+import Header from './components/Header/header';
+import BigLogo from './components/Biglogo/Biglogo';
+import Mission from './components/Mission/Mission';
+import Footer from './components/Footer/Footer';
+import ShoppingList  from './components/Mycomponent/Mycomponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+let name1="Abra-cadabra";
 root.render(
   <React.StrictMode>
    <Header/>
    <BigLogo/>
    <Mission/>
-   <Main/>
+   <Main/> 
+
+   <ShoppingList name="Stepan"/>
+   <ShoppingList name="Volodya"/>
+   <ShoppingList name={name1}/>
+  
    <Footer/>
-    
+   
+
   </React.StrictMode>
 );
 
