@@ -1,17 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+ const biography =
+        [
 
-<body>
-    <script>
-        const celebrities = [
-            Chornovol= {
+            {
+                id: 1,
+                liveEvent: "Yuka",
+                dateOfEvent: "04.07.1981",
+                information: "Was born",
+            },
+            {
+                id: 2,
+                liveEvent: "Alex",
+                dateOfEvent: "01.09.1989",
+                information: "Graduteted to school",
+            },
+
+            {
+                id: 3,
+                liveEvent: "Padlo",
+                dateOfEvent: "01.09.1998",
+                information: "Entered to the univesity"
+            }
+        ]
+export default biography
+
+      /*  const celebrities = [
+            Chornovol = {
                 name: "Chornovol",
                 surname: "Vyacheslav",
                 mainActivity: "political figure",
@@ -63,8 +77,8 @@
                     }
                 ]
             },
-    
-        Lincoln= {
+
+            Lincoln = {
                 name: "Avraam",
                 surname: "Licoln",
                 mainActivity: "President of USA",
@@ -123,17 +137,13 @@
 
         console.log(celebrities);
 
+        let biographyData = [
+            { id: 1, information: "Event1" },
+            { id: 2, information: "Event2" },
+            { id: 3, information: "Event3" },
+            { id: 4, information: "Event4" },
+            { id: 5, information: "Event5" }
+        ]
+*/
 
-
-
-
-
-
-
-
-    </script>
-
-
-</body>
-
-</html>
+        

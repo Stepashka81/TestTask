@@ -1,0 +1,7 @@
+.myStyles{
+    color: white;
+    font-family:Poppins;
+    font-size: 20px;
+    
+};
+ul,li,td,tr {color: white;font-family: Poppins; border: solid 2px white;}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const biography =
+        [
+
+            {
+                id: 1,
+                liveEvent: "name1",
+                dateOfEvent: "04.07.1981",
+                information: "Was born",
+            },
+            {
+                id: 2,
+                liveEvent: "name2",
+                dateOfEvent: "01.09.1989",
+                information: "Graduteted to school",
+            },
+
+            {
+                id: 3,
+                liveEvent: "name3",
+                dateOfEvent: "01.09.1998",
+                information: "Entered to the univesity"
+            }
+        ]
+     //   console.log(biography);
+        function byField(field) {
+  return (a, b) => a[field] > b[field] ? 1 : -1;
+}
+
+ 
+//biography.forEach(user => alert(user.liveEvent)); // Ann, John, Pete
+let sortBiography=biography.sort(byField('information'));
+//console.log(sortBiography);
+//biography.sort(byField('dateOfEvent'));
+//biography.forEach(user => alert(user.dateOfEvent)); // Pete, Ann, John
+
+let users = [
+    {
+        id: 1,
+        name: 'Denis',
+        age: 28
+    },
+    {
+        id: 2,
+        name: 'Olga',
+        age: 25
+    },
+    {
+        id: 3,
+        name: 'Ivan',
+        age: 18
+    }
+]
+
+
+
+console.log(users)
+
+let usersClone=users.slice(0);
+
+
+
+const sortUsers=usersClone.sort((prev, next) => {
+    if ( prev.name < next.name ) return -1;
+    if ( prev.name < next.name ) return 1;
+ //   console.log(sortUsers);
+});
+
+console.log(sortUsers);
+
+
+    </script>
+
+
+
+</body>
+</html>
