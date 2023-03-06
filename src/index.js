@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './components/Header/Header';
+import Header from './components/Header/header';
 // import Main from './Main/Main';
 import BigLogo from './components/Biglogo/Biglogo';
 import Mission from './components/Mission/Mission';
@@ -20,7 +20,6 @@ root.render(
     <Mission/>
    {/* <Main/> */}
    <Tab/>
-   <SortButton  biography={biography}/>
     <Footer />
   </React.StrictMode>
 );

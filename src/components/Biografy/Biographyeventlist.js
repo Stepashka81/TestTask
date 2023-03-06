@@ -1,12 +1,14 @@
 import React from "react";
 import BiographyEvent from "./biographyEvent";
 
-export default function BiographyEventList({ biography }) {
-    const biographyElements = biography.map(biography =>
-        <li key={biography.id}> <BiographyEvent biography={biography} /></li>)
+export default function BiographyEventList(props) {
 return(
     <ul>
-        {biographyElements}
+        {
+            props.biography.map(biography => (
+                <li key={biography.id}> <BiographyEvent biography={biography} /></li>
+            ))
+        }
     </ul>
 )
     }
