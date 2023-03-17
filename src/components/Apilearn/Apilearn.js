@@ -10,8 +10,8 @@ export default class Apilearn extends React.Component {
             items: []
         };
     }
-    componentDidMount() {
-        fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+   componentDidMount() {
+      fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
             .then(res => res.json())
             .then(
                 (result) => this.setState({
@@ -27,8 +27,10 @@ export default class Apilearn extends React.Component {
             )
     }
     render() {
+       
         const { error, isLoaded, items } = this.state;
-       if (error) {
+   //     console.log(items);
+      if (error) {
             return <p>Error{error.message}</p>
         } else if (!isLoaded) {
             return <p> Loading...</p>
@@ -36,7 +38,7 @@ export default class Apilearn extends React.Component {
             return (
                 <ul>
                     {items.map(item=>(
-                        <li key={item.name}>
+                        <li key={item.idDrink}>
                             {item.strDrink}
                         </li>
                     )
