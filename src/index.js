@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Tab from './components/Biografy/Tab';
 import SortButton from './components/Biografy/Sortbutton';
 import biography from './components/Biografy/My_arrays';
+import Apilearn from './components/Apilearn/Apilearn';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +21,8 @@ root.render(
     <Mission/>
    {/* <Main/> */}
    <Tab/>
-    <Footer />
+   <Apilearn/>
+    <Footer/>
   </React.StrictMode>
 );
 

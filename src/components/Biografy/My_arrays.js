@@ -24,6 +24,9 @@
         ]
 export default biography
 
+
+
+
       /*  const celebrities = [
             Chornovol = {
                 name: "Chornovol",
