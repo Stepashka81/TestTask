@@ -11,56 +11,13 @@ export default class Apilearn extends React.Component {
         };
     }
 
-componentDidMount(){
-    fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json")
-    .then(res=>res.json())
-    .then(
-        (result)=>this.setState({
-            isLoaded:true,
-            items:result
-        }),
-        (error) => {
-            this.setState({
-                isLoaded: true,
-                error
-            });
-        }
-        
-        )
-}
-render() {
-       
-    const { error, isLoaded, items } = this.state;
-   
-    if (error) {
-             return <p>Error{error.message}</p>
-         } else if (!isLoaded) {
-             return <p> Loading...</p>
-         } else {
-             return (
-                 <ul>
-                     {items.map(item=>(
-                         <li key={item.r030}>
-                             Курс {item.txt} на {item.exchangedate} дорівнює {item.rate}
-                         </li>
-                     )
-                         )}
-                 </ul>
-             )
-            
-         }
-
-}
-}
- /*учебный  пример с коктейлями
- 
- componentDidMount() {
-      fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+    componentDidMount() {
+        fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json")
             .then(res => res.json())
             .then(
                 (result) => this.setState({
                     isLoaded: true,
-                    items: result.drinks
+                    items: result
                 }),
                 (error) => {
                     this.setState({
@@ -68,31 +25,83 @@ render() {
                         error
                     });
                 }
+
             )
     }
     render() {
-       
+
         const { error, isLoaded, items } = this.state;
-   
-   if (error) {
+
+        if (error) {
             return <p>Error{error.message}</p>
         } else if (!isLoaded) {
             return <p> Loading...</p>
         } else {
             return (
-                <ul>
-                    {items.map(item=>(
-                        <li key={item.idDrink}>
-                            {item.strDrink}
-                        </li>
+                <>
+                <tbody>
+                    <tr>
+                    <th>Валюта</th>
+                    <th>Дата</th>
+                    <th>Курс</th>
+                    </tr>
+                    {items.map(item => (
+                        <tr key={item.r030}>
+                            <td>{item.txt}</td>
+                            <td>{item.exchangedate}</td>
+                            <td>{item.rate}</td>
+                        </tr>
                     )
-                        )}
-                </ul>
+                    )}
+                </tbody>
+                </>
             )
-           
+
         }
-       
-     
-    }*/
+
+    }
+}
+ /*учебный  пример с коктейлями
+ 
+componentDidMount() {
+     fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+           .then(res => res.json())
+           .then(
+               (result) => this.setState({
+                   isLoaded: true,
+                   items: result.drinks
+               }),
+               (error) => {
+                   this.setState({
+                       isLoaded: true,
+                       error
+                   });
+               }
+           )
+   }
+   render() {
+      
+       const { error, isLoaded, items } = this.state;
+  
+  if (error) {
+           return <p>Error{error.message}</p>
+       } else if (!isLoaded) {
+           return <p> Loading...</p>
+       } else {
+           return (
+               <ul>
+                   {items.map(item=>(
+                       <li key={item.idDrink}>
+                           {item.strDrink}
+                       </li>
+                   )
+                       )}
+               </ul>
+           )
+          
+       }
+      
+    
+   }*/
 
 

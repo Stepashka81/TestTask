@@ -1,1 +1,11 @@
-ul,li{font-size: large; color: white;}
+
+/*ul,li,td,tr,tbody,th{font-size: large; color: white;}
+tr,td,th{padding: 5px; border: 2px solid white;}
+tbody{margin-left: 15px;}*/
+tbody{color: white; font-size: medium;}
+body{padding-left: 20px;}
+tr,td,th,tbody{padding: 5px; border:1px solid white;border-collapse: collapse}
+
+
+
+
